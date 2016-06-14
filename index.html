@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Anthologie</title>
+	<link rel="stylesheet" href="">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="public/styles/main.min.css">
+</head>
+<body>
+	<header>
+		<div class="title-box">
+			<img src="public/assets/anthologie.svg" alt="Anthologie Script">
+		</div>
+	</header>
+	<section class="form-results">
+		<form class="search-form form-inline" action="">
+			<div class="form-element">
+				<label for="insta-search">Search Instagram #</label>
+				<input class="form-control" id="insta-search" type="text">
+			</div>
+			<div class="form-element">
+				<label for="dateRange">Select Date Range from</label>
+				<input class="form-control" type="date" id="dateFrom" name="dateRange">
+			</div>
+			<div class="form-element">
+				<label for="dateRange">to</label>
+				<input class="form-control" type="date" id="dateTo" name="dateRange">
+			</div>
+			<button>Create</button>
+		</form>
+		<div class="search-results">
+			<div id="image-box" class="image-container"></div>
+		</div>
+	</section>
+	
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.13.0/moment.min.js"></script>
+	<script src="scripts/scripts.js"></script>
+</body>
+</html>
