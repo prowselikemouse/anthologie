@@ -1,12 +1,12 @@
 {
-  "name": "5 o'Clock Somewhere",
+  "name": "Anthologie",
   "version": "1.0.0",
-  "description": "An any-time excuse to have a drink.",
+  "description": "Anthologie uses a hashtag, a start date, and end date, to build the user a collection of submissions from Instagram.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "prowselikemouse",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.9.11",
