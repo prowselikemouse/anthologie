@@ -62,10 +62,10 @@ $(document).ready(function(){
 			// var getImage = results[i].images;
 			var image = results[i].images.low_resolution.url;
 			var caption = results[i].caption.text;
-			var user = results[i].user.full_name;
+			var user = results[i].user.username;
 			var userPhoto = results[i].user.profile_picture;
 			var photoLink = results[i].link;
-			$('#image-box').append('<div class="oneImage"><div class="user-info"><img class="user-image" src="' + userPhoto + '"/><p class="user-name">' + user + '</p></div><a href="' + photoLink + '"><img src="'+ image +'" alt="something" /></a><p class="caption">' + caption + '</p></div>');
+			$('#image-box').append(`<div class="oneImage"><div class="user-info"><img class="user-image" src="${userPhoto}"/><p class="user-name">${user}</p></div><a target="blank" href="${photoLink}"><img class="insta-photo" src="${image}" alt="something" /></a><p class="caption">${caption}</p></div>`);
       	}  
 	}
 

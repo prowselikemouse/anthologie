@@ -69,7 +69,7 @@ body {
 }
 
 .oneImage {
-	width: 322px;
+	max-width: 322px;
 	background-color: $anthologie-white;
 	border: $anthologie-border;
 	border-radius: 5px;
@@ -94,6 +94,11 @@ body {
 	@include anthologie-body-text(1.6rem);
 	padding: 1.6rem;
 	margin-bottom: 0;
+	font-weight: 400;
+}
+
+.insta-photo {
+	border-bottom: $anthologie-border;
 }
 
 .caption {
