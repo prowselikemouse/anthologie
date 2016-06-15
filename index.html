@@ -5,7 +5,7 @@
 	<title>Anthologie</title>
 	<link rel="stylesheet" href="">
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=News+Cycle" rel="stylesheet">
 	<link rel="stylesheet" href="public/styles/main.min.css">
 </head>
 <body>
@@ -15,20 +15,21 @@
 		</div>
 	</header>
 	<section class="form-results">
-		<form class="search-form form-inline" action="">
+		<form class="search-form form-inline row" action="">
 			<div class="form-element">
 				<label for="insta-search">Search Instagram #</label>
 				<input class="form-control" id="insta-search" type="text">
 			</div>
-			<div class="">
-				<label for="dateRange">Select Date Range from</label>
+			<label class="form-element">Select Date Range </label>
+			<div class="form-element">
+				<label for="dateRange">from</label>
 				<input class="form-control" type="date" id="dateFrom" name="dateRange">
 			</div>
-			<div class="">
+			<div class="form-element">
 				<label for="dateRange">to</label>
 				<input class="form-control" type="date" id="dateTo" name="dateRange">
 			</div>
-			<button>Create</button>
+			<button class="form-submit-button">Create</button>
 		</form>
 		<div class="search-results">
 			<div id="image-box" class="image-container"></div>

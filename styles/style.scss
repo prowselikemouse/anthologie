@@ -1,3 +1,12 @@
+$body-font: 'News Cycle', sans-serif;
+$anthologie-gradient: linear-gradient(rgba(0,191,167,1),rgba(170,255,249,1));
+$anthologie-white: #fdfdfd;
+$anthologie-border: 1px solid #daefee;
+@mixin anthologie-body-text($size) {
+	font-family: $body-font;
+	font-size: $size;
+}
+
 body {
 	background-color: #f5fcfc;
 }
@@ -9,12 +18,13 @@ body {
 
 .search-form {
 	padding: 2rem;
-	font-family: 'Montserrat', sans-serif;
+	@include anthologie-body-text(1.6rem);
 	color: #494949;
-	background-color: #fdfdfd;
-	border: 1px solid #daefee;
+	// background-color: $anthologie-white;
+	border-bottom: $anthologie-border;
+	border-top: $anthologie-border;
 	margin-bottom: 2rem;
-	border-radius: 5px;
+	border-radius: 3px;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -30,6 +40,15 @@ body {
 	label {
 		padding-right: 1.6rem;
 	}
+}
+
+.form-submit-button {
+	background: $anthologie-gradient;
+	border: none;
+	border-radius: 2px;
+	color: $anthologie-white;
+	padding: 0.6rem 1.6rem;
+	text-transform: lowercase;
 }
 
 .form-results {
@@ -51,21 +70,34 @@ body {
 
 .oneImage {
 	width: 322px;
-	background-color: #fdfdfd;
-	border: 1px solid #daefee;
+	background-color: $anthologie-white;
+	border: $anthologie-border;
 	border-radius: 5px;
 	margin-bottom: 5rem;
 }
 
-.userName {
-	font-family: 'Montserrat', sans-serif;
+.user-info {
+	border-bottom: $anthologie-border;
+	display: flex;
+	flex-direction: row;
+}
+
+.user-image {
+	width: 6rem;
+	height: 6rem;
+	border: none;
+	border-radius: 50%;
+	padding: 1.2rem;
+}
+
+.user-name {
+	@include anthologie-body-text(1.6rem);
 	padding: 1.6rem;
-	border-bottom: 1px solid #daefee;
 	margin-bottom: 0;
 }
 
 .caption {
-	font-family: 'Montserrat', sans-serif;
+	font-family: $body-font;
 	padding: 1.6rem;
 }
 

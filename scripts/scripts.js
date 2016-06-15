@@ -63,7 +63,9 @@ $(document).ready(function(){
 			var image = results[i].images.low_resolution.url;
 			var caption = results[i].caption.text;
 			var user = results[i].user.full_name;
-			$('#image-box').append('<div class="oneImage"><p class="userName">' + user + '</p><img src="'+ image +'" alt="something" /><p class="caption">' + caption + '</p></div>');
+			var userPhoto = results[i].user.profile_picture;
+			var photoLink = results[i].link;
+			$('#image-box').append('<div class="oneImage"><div class="user-info"><img class="user-image" src="' + userPhoto + '"/><p class="user-name">' + user + '</p></div><a href="' + photoLink + '"><img src="'+ image +'" alt="something" /></a><p class="caption">' + caption + '</p></div>');
       	}  
 	}
 
